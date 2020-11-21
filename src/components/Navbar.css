@@ -18,6 +18,10 @@
   max-width: 1500px;
 }
 
+i {
+  margin-left: 10px;
+}
+
 .navbar-logo {
   color: #fff;
   justify-self: start;
@@ -73,6 +77,13 @@
 
 .menu-icon {
   display: none;
+}
+
+img {
+  background-color: red;
+  border-radius: 20px;
+  width: 170px;
+
 }
 
 @media screen and (max-width: 960px) {
@@ -156,3 +167,4 @@
     transition: 250ms;
   }
 }
+

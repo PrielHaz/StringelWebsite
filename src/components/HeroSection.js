@@ -6,16 +6,21 @@ import "./HeroSection.css";
 function HeroSection() {
 	return (
 		<div className="hero-container">
-			<video src="/videos/video-1.mp4" autoPlay loop muted />
-			<h1>Smooth Scrolling Website</h1>
+			<video src="/videos/video-2.mp4" autoPlay loop muted />
+			<h1>Stringel</h1>
 			<p>What are you waiting for?</p>
+			<ul>
+				<li>Desktop and Mobile applications</li>
+				<li>Web Development</li>
+				<li>Game Development</li>
+			</ul>
 			<div className="hero-btns">
 				<Button
 					className="btns"
 					buttonStyle="btn--outline"
 					buttonSize="btn--large"
 				>
-					BUILD YOUR COMPANY WEBSITE FOR ONLY 250$
+					BUILD YOUR COMPANY WEBSITE
 				</Button>
 				<Button
 					className="btns"

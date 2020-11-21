@@ -32,6 +32,21 @@ video {
     'Lucida Sans', Arial, sans-serif;
 }
 
+.hero-container > ul {
+  padding: 20px;
+  right: 100px;
+  position: sticky;
+  font-size: 25px;
+  color: cornsilk;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+
 .hero-btns {
   margin-top: 32px;
 }
