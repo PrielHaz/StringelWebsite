@@ -1,56 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
-
-body{
-  background: url('https://i.imgur.com/kk76J5I.jpg') no-repeat top center;
+body {
+  background: url("https://i.imgur.com/kk76J5I.jpg") no-repeat top center;
   background-size: cover;
   height: 120vh;
 }
 
-.wrapper{
+.wrapper {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 550px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   padding: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.wrapper .title h1{
+.wrapper .title h1 {
   color: #c5ecfd;
   text-align: center;
   margin-bottom: 25px;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
 }
 
-.input-fields{
+.input-fields {
   display: flex;
   flex-direction: column;
   margin-right: 4%;
 }
 
 .phone-num {
-    color: #39b7dd;
-    text-align: center;
-    position: relative;
-    top: 80px;
+  color: #39b7dd;
+  text-align: center;
+  position: relative;
+  top: 35px;
 }
 
 .input-fields,
-.msg{
+.msg {
   width: 48%;
 }
 
 .input-fields .input,
-.msg textarea{
+.msg textarea {
   margin: 10px 0;
   background: transparent;
   border: 0px;
@@ -60,7 +59,7 @@ body{
   width: 100%;
 }
 
-.msg textarea{
+.msg textarea {
   height: 212px;
 }
 
@@ -78,36 +77,35 @@ body{
 }
 
 .btnContactForm {
-    font-size: 20px;
-    background: #39b7dd;
-    text-align: center;
-    padding: 15px;
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.5s;
-    padding-left: 150px;
-    padding-right: 150px;
-    position: relative;
-    right: 220px;
-    top: 250px;
+  position: relative;
+  top: 20px;
+  font-size: 25px;
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .btnContactForm:hover {
-    background: #0b1113;
+  background: #ca3d3d;
 }
 
-@media screen and (max-width: 600px){
-  .contact-form{
+@media screen and (max-width: 600px) {
+  .contact-form {
     flex-direction: column;
   }
-  .msg textarea{
+  .msg textarea {
     height: 80px;
   }
   .input-fields,
-  .msg{
+  .msg {
     width: 100%;
   }
 }
