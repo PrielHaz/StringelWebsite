@@ -2,7 +2,7 @@ import emailjs from "emailjs-com";
 import React from "react";
 import "./contactForm.css";
 
-export default function ContactUs() {
+function ContactUs() {
   function sendEmail(e) {
     console.log("sends mail");
     e.preventDefault();
@@ -35,7 +35,7 @@ export default function ContactUs() {
             <input
               type="text"
               className="input"
-              placeholder="Name"
+              placeholder="שם"
               name="message"
               id="message"
             />
@@ -44,12 +44,12 @@ export default function ContactUs() {
               name="email"
               id="email"
               className="input"
-              placeholder="Email Address"
+              placeholder="כתובת אימייל"
             />
             <input
               type="text"
               className="input"
-              placeholder="Phone"
+              placeholder="מספר פלאפון לחזרה"
               name="phone"
               id="phone"
             />
@@ -63,7 +63,7 @@ export default function ContactUs() {
 
             <input
               type="submit"
-              value="Send Message"
+              value="שלח פנייה"
               className="btnContactForm"
             ></input>
           </form>
@@ -71,59 +71,7 @@ export default function ContactUs() {
       </div>
       <h2 className="phone-num">אנו זמינים בטלפון: 052-708-8919</h2>
     </div>
-
-    // <div>
-    // 	<div className="container">
-    // 		<form onSubmit={sendEmail}>
-    // 			<div className="row pt-5 mx-auto">
-    // 				<div className="col-8 form-group mx-auto">
-    // 					<input
-    // 						type="text"
-    // 						className="form-control"
-    // 						placeholder="Name"
-    // 						name="name"
-    // 						id="name"
-    // 					/>
-    // 				</div>
-    // 				<div className="col-8 form-group pt-2 mx-auto">
-    // 					<input
-    // 						type="email"
-    // 						className="form-control"
-    // 						placeholder="Email Address"
-    // 						name="email"
-    // 						id="email"
-    // 					/>
-    // 				</div>
-    // 				<div className="col-8 form-group pt-2 mx-auto">
-    // 					<input
-    // 						type="text"
-    // 						className="form-control"
-    // 						placeholder="Subject"
-    // 						name="phone"
-    // 						id="phone"
-    // 					/>
-    // 				</div>
-    // 				<div className="col-8 form-group pt-2 mx-auto">
-    // 					<textarea
-    // 						className="form-control"
-    // 						id=""
-    // 						cols="30"
-    // 						rows="8"
-    // 						placeholder="Your message"
-    // 						name="message"
-    // 						id="message"
-    // 					></textarea>
-    // 				</div>
-    // 				<div className="col-8 pt-3 mx-auto">
-    // 					<input
-    // 						type="submit"
-    // 						className="btn btn-info"
-    // 						value="Send Message"
-    // 					></input>
-    // 				</div>
-    // 			</div>
-    // 		</form>
-    // 	</div>
-    // </div>
   );
 }
+
+export default ContactUs;

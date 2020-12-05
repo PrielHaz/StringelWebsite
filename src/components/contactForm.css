@@ -1,15 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  background: url("https://i.imgur.com/kk76J5I.jpg") no-repeat top center;
   background-size: cover;
   height: 120vh;
 }
 
+/* background: url("https://i.imgur.com/kk76J5I.jpg") no-repeat top center; */
+
+::placeholder {
+  text-align: right;
+  font-weight: bold;
+}
+
 .wrapper {
-  position: absolute;
-  top: 70%;
+  position: relative;
+  top: 300px;
   left: 50%;
+  margin-bottom: 130px;
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 550px;
@@ -48,8 +55,16 @@ body {
   width: 48%;
 }
 
-.input-fields .input,
+.input-fields,
 .msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+.input {
   margin: 10px 0;
   background: transparent;
   border: 0px;
@@ -79,7 +94,10 @@ body {
 .btnContactForm {
   position: relative;
   top: 20px;
-  font-size: 25px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: expanded;
   background: #39b7dd;
   text-align: center;
   padding: 15px;
@@ -89,12 +107,12 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   transition: 0.5s;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .btnContactForm:hover {
-  background: #ca3d3d;
+  background: purple;
 }
 
 @media screen and (max-width: 600px) {
