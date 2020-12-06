@@ -5,7 +5,6 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
 import ResumePage from "./components/pages/ResumePage";
-import SignUp from "./components/pages/SignUp";
 import ContactUsPage from "./components/pages/ContactUsPage";
 
 function App() {
