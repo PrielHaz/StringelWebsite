@@ -73,7 +73,8 @@ function ContactUs() {
             </form>
           </div>
         </div>
-        <h2 className="phone-num">אנו זמינים בטלפון: 052-708-8919</h2>
+        <h2 className="phone-num">:אנו זמינים בטלפון </h2>
+        <h2 className="phone-num">052-708-8919</h2>
       </div>
     </>
   );
