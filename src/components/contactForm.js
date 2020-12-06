@@ -27,7 +27,7 @@ function ContactUs() {
   }
   return (
     <>
-      <video src="/videos/Typing_dark.mov" autoPlay loop muted />
+      <video src="/videos/Typing_dark.mp4" autoPlay loop muted />
       <div className="wrapper">
         <div className="title">
           <h1>מלא את פרטיך ונחזור אליך בהקדם</h1>
