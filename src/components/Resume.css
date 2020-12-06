@@ -67,6 +67,12 @@
     left: 15%;
   }
 }
+@media screen and (max-width: 450px) {
+  .watch-btn {
+    display: relative;
+    left: 10vw;
+  }
+}
 
 .play-btn {
   display: flex;
@@ -113,7 +119,6 @@
 
 .primary-btn:before {
   content: "";
-  position: absolute;
   width: 400px;
   height: 1px;
   top: 88%;

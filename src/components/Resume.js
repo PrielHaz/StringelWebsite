@@ -45,7 +45,6 @@ function Resume() {
         src="images/PrielHazanResume.jpg"
         alt="Priel Hazan Resume"
       />
-
       <h1 className="header">
         <span className="hey2">Hey,</span> I'm
         <br />
@@ -67,7 +66,8 @@ function Resume() {
         className={liam ? "ResumePhoto" : "no-display"}
         src="images/LiamHazanResume.jpg"
         alt="Liam Hazan Resume"
-      />
+      />{" "}
+      */
     </div>
   );
 }
