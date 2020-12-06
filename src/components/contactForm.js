@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
-import React from "react";
+import React, { useState } from "react";
 import "./contactForm.css";
+import { Link } from "react-router-dom";
 
 function ContactUs() {
   function sendEmail(e) {
@@ -31,13 +32,13 @@ function ContactUs() {
       </div>
       <div className="contact-form">
         <div className="input-fields">
-          <form onSubmit={sendEmail}>
+          <form id="form" onSubmit={sendEmail}>
             <input
               type="text"
               className="input"
               placeholder="שם"
-              name="message"
-              id="message"
+              name="name"
+              id="name"
             />
             <input
               type="text"
@@ -60,12 +61,13 @@ function ContactUs() {
               name="message"
               id="message"
             />
-
-            <input
-              type="submit"
-              value="שלח פנייה"
-              className="btnContactForm"
-            ></input>
+            <div className="btnContactForm">
+              <input
+                type="submit"
+                value="שלח פנייה"
+                className="submit-btn"
+              ></input>
+            </div>
           </form>
         </div>
       </div>

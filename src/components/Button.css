@@ -4,7 +4,7 @@
 
 .btn {
   padding: 8px 20px;
-  border-radius: 2px;
+  border-radius: 10px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -30,7 +30,7 @@
 }
 
 .btn--large {
-  padding: 12px 26px;
+  padding: 12px 5px;
   font-size: 20px;
 }
 
