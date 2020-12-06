@@ -18,6 +18,23 @@ video {
   object-fit: contain;
 }
 
+.skills {
+  text-align: left;
+  list-style-type: none;
+}
+
+.item1 {
+  color: bisque;
+}
+
+.item2 {
+  color: bisque;
+}
+
+.item3 {
+  color: bisque;
+}
+
 .hero-container > h1 {
   color: #fff;
   font-size: 100px;
@@ -28,8 +45,8 @@ video {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .hero-container > ul {
@@ -38,14 +55,14 @@ video {
   position: sticky;
   font-size: 25px;
   color: cornsilk;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 li {
   margin-left: 40px;
   margin-top: 5px;
 }
-
 
 .hero-btns {
   margin-top: 32px;

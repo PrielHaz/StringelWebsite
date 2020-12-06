@@ -83,7 +83,6 @@ img {
   background-color: red;
   border-radius: 20px;
   width: 170px;
-
 }
 
 @media screen and (max-width: 960px) {
@@ -167,4 +166,3 @@ img {
     transition: 250ms;
   }
 }
-

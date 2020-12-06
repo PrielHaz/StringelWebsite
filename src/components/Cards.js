@@ -19,13 +19,13 @@ function Cards() {
               src="images/Assasination.png"
               text="Game Development"
               label="Gaming"
-              path="/services"
+              path="/contact"
             />
             <CardItem
               src="images/Web.jpg"
               text="Web Development"
               label="Web"
-              path="/services"
+              path="/contact"
             />
           </ul>
           <ul className="cards__items">
@@ -33,13 +33,13 @@ function Cards() {
               src="images/SmartBuild.png"
               text="Mobile Apps"
               label="Mobile"
-              path="/services"
+              path="/contact"
             />
             <CardItem
               src="images/git.png"
               text="Projects"
               label="Git"
-              path="/products"
+              path="/Resume"
             />
           </ul>
         </div>
