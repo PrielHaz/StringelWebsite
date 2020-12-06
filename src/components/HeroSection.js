@@ -30,12 +30,13 @@ function HeroSection() {
           BUILD YOUR COMPANY WEBSITE
           <i class="fab fa-internet-explorer"></i>
         </Button>
+
         <Button
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
           to="/contact"
-          onClick={console.log("hey")}
+          onClick={console.log("Redirect to Contact page")}
         >
           SEND A REQUEST <i class="fas fa-paper-plane"></i>
         </Button>

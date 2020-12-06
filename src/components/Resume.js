@@ -1,7 +1,30 @@
 import React, { useState, useEffect } from "react";
 import "./Resume.css";
+import $ from "jquery";
 
 function Resume() {
+  function runJquery() {
+    console.log("jquery runs");
+    $(document).ready(function () {
+      $("#openPriel").click(function () {
+        $("#prielResume").slideToggle("slow");
+        if ($("#liamResume").is(":visible")) {
+          $("#liamResume").slideToggle("slow");
+        }
+      });
+      $("#openLiam").click(function () {
+        $("#liamResume").slideToggle("slow");
+        if ($("#prielResume").is(":visible")) {
+          $("#prielResume").slideToggle("slow");
+        }
+      });
+    });
+  }
+
+  useEffect(() => {
+    runJquery();
+  }, []);
+
   const [priel, setPriel] = useState(false);
   const handlePriel = () => {
     console.log("Change priel from " + priel.toString());
@@ -22,6 +45,7 @@ function Resume() {
 
   return (
     <div className="all">
+      <script src="../index.js"></script>
       <video src="/videos/video-1.mp4" autoPlay loop muted />
       <h1 className="header">
         <span className="hey">Hey,</span> I'm
@@ -32,7 +56,11 @@ function Resume() {
         <div class="btn-group">
           <div class="play-btn">
             <div class="play-btn-inner">
-              <button onClick={handlePriel} className="watch-btn">
+              <button
+                className="watch-btn"
+                onClick={handlePriel}
+                id="openPriel"
+              >
                 <i class="fa fa-play"></i>
                 <span>{priel ? "Close" : "Watch"} Resume</span>
               </button>
@@ -41,7 +69,8 @@ function Resume() {
         </div>
       </div>
       <img
-        className={priel ? "ResumePhoto" : "no-display"}
+        className="ResumePhoto no-display"
+        id="prielResume"
         src="images/PrielHazanResume.jpg"
         alt="Priel Hazan Resume"
       />
@@ -54,7 +83,7 @@ function Resume() {
         <div class="btn-group">
           <div class="play-btn">
             <div class="play-btn-inner">
-              <button onClick={handleLiam} className="watch-btn">
+              <button id="openLiam" onClick={handleLiam} className="watch-btn">
                 <i class="fa fa-play"></i>
                 <span>{liam ? "Close" : "Watch"} Resume</span>
               </button>
@@ -63,11 +92,11 @@ function Resume() {
         </div>
       </div>
       <img
-        className={liam ? "ResumePhoto" : "no-display"}
+        id="liamResume"
+        className="ResumePhoto no-display"
         src="images/LiamHazanResume.jpg"
         alt="Liam Hazan Resume"
-      />{" "}
-      */
+      />
     </div>
   );
 }

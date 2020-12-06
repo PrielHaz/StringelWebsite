@@ -2,6 +2,7 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import "./contactForm.css";
 import { Link } from "react-router-dom";
+import { Button } from "./Button";
 
 function ContactUs() {
   function sendEmail(e) {
@@ -24,11 +25,47 @@ function ContactUs() {
       );
     e.target.reset();
     alert("בקשתך התקבלה במערכת, נציגנו יחזרו אליך בהקדם");
+    setDone(true);
   }
+  const [done, setDone] = useState(false);
+
   return (
     <>
       <video src="/videos/Typing_dark.mp4" autoPlay loop muted />
-      <div className="wrapper">
+      <div className={done ? "done" : "hide"}>
+        {/* <div className="hide"> */}
+        <div className="ty">
+          <h1>
+            תודה שבחרת <span className="stringel">סטרינגל</span>
+          </h1>
+        </div>
+        <br />
+        <div className="contact-btn">
+          <div className="to-home">
+            <Button
+              className="btns"
+              buttonStyle="btn--outline"
+              to="/"
+              onClick={console.log("Redirect to Home Page")}
+            >
+              <i class="fas fa-home"></i> חזרה לדף הבית
+            </Button>
+          </div>
+          <div className="to-prog">
+            <Button
+              className="btns"
+              buttonStyle="btn--outline"
+              to="/Resume"
+              onClick={console.log("Redirect to Home Page")}
+            >
+              <i class="fas fa-laptop-code margin"></i>
+              לעמוד המתכנתים שלנו
+            </Button>
+          </div>
+        </div>
+      </div>
+      <div className={done ? "hide" : "wrapper"}>
+        {/* <div className="wrapper"> */}
         <div className="title">
           <h1>מלא את פרטיך ונחזור אליך בהקדם</h1>
         </div>
@@ -36,6 +73,8 @@ function ContactUs() {
           <div className="input-fields">
             <form id="form" onSubmit={sendEmail}>
               <input
+                dir="rtl"
+                required
                 type="text"
                 className="input"
                 placeholder="שם"
@@ -43,6 +82,8 @@ function ContactUs() {
                 id="name"
               />
               <input
+                pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                required
                 type="text"
                 name="email"
                 id="email"
@@ -50,6 +91,7 @@ function ContactUs() {
                 placeholder="כתובת אימייל"
               />
               <input
+                required
                 type="text"
                 className="input"
                 placeholder="מספר פלאפון לחזרה"
@@ -59,7 +101,7 @@ function ContactUs() {
               <input
                 type="text"
                 className="input"
-                placeholder="תיאור הבקשה"
+                placeholder="?מה אתה מעוניין שנפתח עבורך"
                 name="message"
                 id="message"
               />
