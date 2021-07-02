@@ -11,19 +11,19 @@ function Cards() {
           <ul className="cards__items">
             <CardItem
               src="images/resume.jpg"
-              text="Our programmers, skills, resume, specialties and more"
+              text="צפו בצוות המתכנתים שלנו, קורות חיים ועוד"
               label="Resume"
               path="/Resume"
             />
             <CardItem
               src="images/Assasination.png"
-              text="Game Development"
+              text="פיתוח משחקים"
               label="Gaming"
               path="/contact"
             />
             <CardItem
               src="images/Web.jpg"
-              text="Web Development"
+              text="פיתוח אתרים בהתאמה אישית מושלמת"
               label="Web"
               path="/contact"
             />
@@ -31,13 +31,13 @@ function Cards() {
           <ul className="cards__items">
             <CardItem
               src="images/SmartBuild.png"
-              text="Mobile Apps"
+              text="פיתוח אפליקציות למובייל ולשולחן העבודה"
               label="Mobile"
               path="/contact"
             />
             <CardItem
               src="images/git.png"
-              text="Projects"
+              text="פרוייקטים"
               label="Git"
               path="/Resume"
             />

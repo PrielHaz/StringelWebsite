@@ -7,18 +7,19 @@ function HeroSection() {
   return (
     <div className="hero-container">
       <video src="/videos/video-2.mp4" autoPlay loop muted />
-      <p>What are you waiting for?</p>
+      <p className="headerPro">העסק שלך חייב אתר מקצועי</p>
+      <p>
+        <i class="fab fa-google-play"></i> <i class="fab fa-app-store"></i>
+        <i class="fas fa-file-code"></i>
+        <i class="fas fa-gamepad"></i>
+      </p>
       <ul className="skills">
         <li className="item1">
-          Desktop and Mobile applications<i class="fab fa-app-store"></i>
-          <i class="fab fa-google-play"></i>
+          <div className="item">פיתוח אתרים בהתאמה אישית</div>
         </li>
-        <li className="item2">
-          Web Development<i class="fas fa-file-code"></i>
-        </li>
-        <li className="item3">
-          Game Development<i class="fas fa-gamepad"></i>
-        </li>
+
+        <li className="item">פיתוח אפליקציות למובייל</li>
+        <li className="item">פיתוח מערכות תוכנה מתקדמות</li>
       </ul>
       <div className="hero-btns">
         <Button
@@ -27,8 +28,8 @@ function HeroSection() {
           buttonSize="btn--large"
           to="/contact"
         >
-          BUILD YOUR COMPANY WEBSITE
           <i class="fab fa-internet-explorer"></i>
+          בנה אתר לעסק שלך
         </Button>
 
         <Button
@@ -38,7 +39,8 @@ function HeroSection() {
           to="/contact"
           onClick={console.log("Redirect to Contact page")}
         >
-          SEND A REQUEST <i class="fas fa-paper-plane"></i>
+          <i class="fas fa-paper-plane"></i>
+          צור איתנו קשר
         </Button>
       </div>
     </div>
